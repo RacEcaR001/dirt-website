@@ -297,3 +297,21 @@ a:hover{opacity:.9}
   background-color: rgba(0,0,0,.18);
   backdrop-filter: blur(1px);
 }
+.hero-banner .banner {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 14px;
+  margin-top: 18px;
+  animation: neonPulse 4s infinite ease-in-out;
+}
+.hero-banner .banner {
+  width: 100%;
+  max-width: 100%;
+  max-height: 300px;   /* 🔥 reduce banner height */
+  object-fit: contain; /* 🔥 keeps image proportions */
+  display: block;
+  border-radius: 14px;
+  margin-top: 18px;
+  animation: neonPulse 4s infinite ease-in-out;
+}
