@@ -168,3 +168,31 @@ a:hover{opacity:.9}
                0 0 22px rgba(56,226,159,.45);
   margin-top: 12px; /* spacing below logo */
 }
+/* Hero background (reduce padding/height) */
+.hero {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background:
+    radial-gradient(800px 200px at 50% -20%, rgba(122,45,245,.25), transparent),
+    linear-gradient(135deg, rgba(122,45,245,.35), rgba(255,122,45,.25));
+  padding: 36px 0;   /* reduced height */
+}
+
+/* Logo bigger */
+.logo {
+  width: 160px;      /* was 120px */
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(56,226,159,.5);
+}
+
+/* Wordmark bigger */
+.wordmark {
+  font-size: 64px;   /* was 48px */
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 
+    0 0 20px rgba(122,45,245,.6),
+    0 0 30px rgba(56,226,159,.6);
+  margin-top: 14px;
+}
