@@ -152,3 +152,20 @@ a:hover{opacity:.9}
   min-height: 80vh;          /* takes up most of screen height */
   text-align: center;        /* keep text centered */
 }
+.logo {
+  width: 120px;   /* adjust as needed */
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(56,226,159,.4);
+}
+
+.wordmark {
+  font-size: 48px;  /* smaller than before */
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 12px rgba(122,45,245,.6),
+               0 0 22px rgba(56,226,159,.45);
+  margin-top: 12px; /* spacing below logo */
+}
