@@ -31,12 +31,12 @@ html,body{
 
 /* 🔵 Brand / logo */
 .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}
-.logo{
-  width:64px;
-  height:64px;
-  border-radius:50%;
-  object-fit:cover;               /* keeps the circle nicely cropped */
-  box-shadow:0 0 0 2px rgba(56,226,159,.45), 0 0 18px rgba(56,226,159,.25)
+.logo {
+  width: 90px;   /* was 56px */
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(56,226,159,.6),
+              0 0 22px rgba(56,226,159,.4);
 }
 .wordmark{font-size:20px;opacity:.95}
 
