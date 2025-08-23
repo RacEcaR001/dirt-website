@@ -136,3 +136,12 @@ a:hover{opacity:.9}
   opacity: 0.9;
   transform: translateY(-2px);
 }
+.wordmark {
+  font-size: 64px;       /* make it bold and large */
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 16px rgba(122, 45, 245, 0.8),
+               0 0 28px rgba(56, 226, 159, 0.6);
+}
