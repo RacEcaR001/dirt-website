@@ -238,3 +238,18 @@ a:hover{opacity:.9}
   opacity: 0.9;
   transform: translateY(-2px);
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+
+  /* Background smaller */
+  background:
+    radial-gradient(800px 150px at 50% -20%, rgba(122,45,245,.25), transparent),
+    linear-gradient(135deg, rgba(122,45,245,.35), rgba(255,122,45,.25));
+
+  padding: 18px 0;     /* reduced padding (less vertical background space) */
+  min-height: auto;    /* remove forced tall height */
+}
