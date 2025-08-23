@@ -42,6 +42,38 @@
   <section class="hero-banner">
     <img src="images/banner.png" alt="DiRT Banner" class="banner">
   </section>
+<!-- — YouTube Video Behind the Site — -->
+<section class="media container">
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube.com/embed/Dw_tGRblTXk?rel=0&modestbranding=1&autoplay=1&mute=1&controls=1&playsinline=1"
+      title="DiRT soundtrack"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+    <button class="unmute" id="unmuteBtn">🔊 Unmute</button>
+  </div>
+</section>
+
+<script>
+  (function(){
+    const btn = document.getElementById('unmuteBtn');
+    const iframe = document.querySelector('.video-embed iframe');
+    if (!btn || !iframe) return;
+    btn.addEventListener('click', () => {
+      try {
+        const url = new URL(iframe.src);
+        url.searchParams.set('mute', '0');
+        url.searchParams.set('autoplay', '1');
+        iframe.src = url.toString();
+        btn.style.display = 'none';
+      } catch {
+        btn.style.display = 'none';
+      }
+    });
+  })();
+</script>
 
   <!-- ⚡ Footer -->
   <footer class="footer">
