@@ -196,3 +196,14 @@ a:hover{opacity:.9}
     0 0 30px rgba(56,226,159,.6);
   margin-top: 14px;
 }
+.wordmark {
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 
+    0 0 20px rgba(122,45,245,.6),
+    0 0 30px rgba(56,226,159,.6);
+  margin-top: 14px;
+  text-transform: uppercase; /* REMOVE THIS LINE */
+}
