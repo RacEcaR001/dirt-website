@@ -33,14 +33,15 @@
   <section class="hero-banner">
     <img src="images/banner.png" alt="DiRT Banner" class="banner">
   </section>
-<!-- — YouTube Video Behind the Site — -->
+<!-- 🎵 YouTube Video Embed -->
 <section class="media container">
   <div class="video-embed">
     <iframe
-      src="https://www.youtube.com/embed/Dw_tGRblTXk?rel=0&modestbranding=1&autoplay=1&mute=1&controls=1&playsinline=1"
+      id="ytPlayer"
+      src="https://www.youtube.com/embed/BXBDVFTuq8s?autoplay=1&mute=1&controls=1&playsinline=1"
       title="DiRT soundtrack"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow="autoplay; encrypted-media"
       allowfullscreen>
     </iframe>
     <button class="unmute" id="unmuteBtn">🔊 Unmute</button>
@@ -50,16 +51,18 @@
 <script>
   (function(){
     const btn = document.getElementById('unmuteBtn');
-    const iframe = document.querySelector('.video-embed iframe');
+    const iframe = document.getElementById('ytPlayer');
     if (!btn || !iframe) return;
+
     btn.addEventListener('click', () => {
       try {
         const url = new URL(iframe.src);
-        url.searchParams.set('mute', '0');
+        url.searchParams.set('mute', '0');   // turn off mute
         url.searchParams.set('autoplay', '1');
-        iframe.src = url.toString();
-        btn.style.display = 'none';
-      } catch {
+        iframe.src = url.toString();         // reload with sound
+        btn.style.display = 'none';          // hide button after click
+      } catch(e) {
+        console.error("Unmute failed", e);
         btn.style.display = 'none';
       }
     });
