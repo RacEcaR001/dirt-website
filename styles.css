@@ -145,3 +145,10 @@ a:hover{opacity:.9}
   text-shadow: 0 0 16px rgba(122, 45, 245, 0.8),
                0 0 28px rgba(56, 226, 159, 0.6);
 }
+.hero-inner {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  min-height: 80vh;          /* takes up most of screen height */
+  text-align: center;        /* keep text centered */
+}
