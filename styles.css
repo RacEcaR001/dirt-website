@@ -56,3 +56,11 @@ a:hover{opacity:.9}
 
 /* Optional “smoke break” style */
 .smoke{font-size:1.15rem;background:#0f0f16;border:1px dashed rgba(255,255,255,.2);padding:16px;border-radius:12px}
+/* === Banner Styling === */
+.hero-banner .banner {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  margin-top: 18px;
+  box-shadow: 0 0 28px rgba(122, 45, 245, 0.25);
+}
