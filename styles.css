@@ -64,3 +64,15 @@ a:hover{opacity:.9}
   margin-top: 18px;
   box-shadow: 0 0 28px rgba(122, 45, 245, 0.25);
 }
+/* Neon Banner Pulse */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 28px rgba(122, 45, 245, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 42px rgba(56, 226, 159, 0.45);
+  }
+}
+.hero-banner .banner {
+  animation: neonPulse 4s infinite ease-in-out;
+}
